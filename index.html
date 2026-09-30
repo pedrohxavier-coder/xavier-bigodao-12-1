@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XAVIER STORE — sneakers, streetwear e peças selecionadas.">
+  <meta name="theme-color" content="#071225">
+  <title>XAVIER STORE | Streetwear & Sneakers</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#inicio" class="logo-link" aria-label="Xavier Store">
+    <img src="assets/logo.png" alt="Xavier Store" class="logo">
+  </a>
+  <div class="header-actions">
+    <label class="search" aria-label="Pesquisar produtos">
+      <span>⌕</span>
+      <input id="searchInput" type="search" placeholder="Pesquisar..." autocomplete="off">
+    </label>
+    <nav aria-label="Menu principal">
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="whatsapp" href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">XAVIER STORE</span>
+      <h1>Streetwear sem excesso.<br><span>Estilo que fala.</span></h1>
+      <p>Uma seleção enxuta de sneakers e peças urbanas para quem valoriza autenticidade.</p>
+      <a href="#colecao" class="button">Ver coleção</a>
+    </div>
+  </section>
+
+  <section id="colecao" class="section">
+    <div class="section-head">
+      <span class="eyebrow">SELEÇÃO</span>
+      <h2>Peças em destaque</h2>
+      <p>Curadoria simples. Produtos que realmente merecem espaço.</p>
+    </div>
+
+    <div class="products" id="products">
+      <article class="product" data-search="retro low sneaker 899 90">
+        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85" alt="Sneaker premium">
+        <div>
+          <small>SNEAKER</small>
+          <h3>Retro Low</h3>
+          <strong>R$ 899,90</strong>
+        </div>
+      </article>
+
+      <article class="product" data-search="classic runner sneaker 749 90">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Tênis vermelho premium">
+        <div>
+          <small>SNEAKER</small>
+          <h3>Classic Runner</h3>
+          <strong>R$ 749,90</strong>
+        </div>
+      </article>
+
+      <article class="product" data-search="oversized essential streetwear camiseta 249 90">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=85" alt="Peça streetwear">
+        <div>
+          <small>STREETWEAR</small>
+          <h3>Oversized Essential</h3>
+          <strong>R$ 249,90</strong>
+        </div>
+      </article>
+    </div>
+    <p id="noResults" class="no-results" hidden>Nenhum produto encontrado.</p>
+  </section>
+
+  <section id="sobre" class="about">
+    <div>
+      <span class="eyebrow">SOBRE A XAVIER</span>
+      <h2>Menos ruído.<br>Mais identidade.</h2>
+    </div>
+    <p>A Xavier Store nasceu para aproximar a cultura dos sneakers e do streetwear de uma experiência de compra mais limpa, direta e confiável. Selecionamos cada peça pensando em qualidade, autenticidade e estilo.</p>
+  </section>
+
+  <section id="contato" class="contact">
+    <div>
+      <span class="eyebrow">ATENDIMENTO</span>
+      <h2>Quer encontrar uma peça específica?</h2>
+      <p>Fale com a nossa equipe pelo WhatsApp e consulte disponibilidade, tamanho e encomendas.</p>
+    </div>
+    <a class="button" href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">Falar no WhatsApp ↗</a>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div>
+      <strong>XAVIER.STORE</strong>
+      <p>Streetwear & sneakers.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#inicio">Início</a>
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Xavier Store. Todos os direitos reservados.</div>
+</footer>
+
+</body>
+</html>
