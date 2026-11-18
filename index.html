@@ -10,13 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
 <header class="header">
   <a href="#inicio" class="logo-link" aria-label="Xavier Store">
-    <img src="assets/logo.png" alt="Xavier Store" class="logo">
+    <img src="assets/logo.svg" alt="Xavier Store" class="logo">
   </a>
   <div class="header-actions">
     <label class="search" aria-label="Pesquisar produtos">
@@ -25,13 +24,14 @@
     </label>
     <nav aria-label="Menu principal">
       <a href="#colecao">Coleção</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#experiencia">Destaques</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
       <a class="whatsapp" href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </nav>
   </div>
 </header>
-
 <main>
   <section id="inicio" class="hero">
     <div class="hero-content">
@@ -41,45 +41,174 @@
       <a href="#colecao" class="button">Ver coleção</a>
     </div>
   </section>
-
+  <section class="promo-slider-section" aria-label="Destaques da Xavier Store">
+    <div class="slider-wrapper">
+      <div class="slider-track">
+        <article class="slide is-active">
+          <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1212,c_limit/19a82e7b-af02-4f48-8a8a-c084bc60472e/check-out-the-best-black-sneaker-styles-by-nike.jpg" alt="Nike Air Force 1 em destaque">
+          <div class="slide-content"><span>DROP 01</span><h2>Sneakers que definem seu estilo.</h2><a href="#colecao">Ver coleção →</a></div>
+        </article>
+        <article class="slide">
+          <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_599,c_limit/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ec110126-b2bd-43f7-a9f0-309eb6654e16/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Air Jordan 1 Retro">
+          <div class="slide-content"><span>ESSENTIALS</span><h2>Clássicos para todos os dias.</h2><a href="#colecao">Comprar agora →</a></div>
+        </article>
+        <article class="slide">
+          <img src="https://assets.adidas.com/images/w_500%2Cf_auto%2Cq_auto/4c70105150234ac4b948a8bf01187e0c_9366/Samba_OG_Shoes_Black_B75807_01_standard.jpg" alt="adidas Samba OG">
+          <div class="slide-content"><span>STREETWEAR</span><h2>Menos excesso. Mais identidade.</h2><a href="#sobre">Conheça a marca →</a></div>
+        </article>
+        <article class="slide">
+          <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1200&q=90" alt="Tênis streetwear">
+          <div class="slide-content"><span>CURADORIA</span><h2>Peças selecionadas a dedo.</h2><a href="#contato">Fale conosco →</a></div>
+        </article>
+      </div>
+      <button class="slider-control slider-prev" type="button" aria-label="Banner anterior">&#10094;</button>
+      <button class="slider-control slider-next" type="button" aria-label="Próximo banner">&#10095;</button>
+      <div class="slider-dots" role="group" aria-label="Escolher banner">
+        <button type="button" class="slider-dot is-active" aria-label="Ir para banner 1" aria-pressed="true"></button>
+        <button type="button" class="slider-dot" aria-label="Ir para banner 2" aria-pressed="false"></button>
+        <button type="button" class="slider-dot" aria-label="Ir para banner 3" aria-pressed="false"></button>
+        <button type="button" class="slider-dot" aria-label="Ir para banner 4" aria-pressed="false"></button>
+      </div>
+    </div>
+  </section>
   <section id="colecao" class="section">
     <div class="section-head">
       <span class="eyebrow">SELEÇÃO</span>
       <h2>Peças em destaque</h2>
       <p>Curadoria simples. Produtos que realmente merecem espaço.</p>
     </div>
-
     <div class="products" id="products">
-      <article class="product" data-search="retro low sneaker 899 90">
-        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85" alt="Sneaker premium">
-        <div>
-          <small>SNEAKER</small>
-          <h3>Retro Low</h3>
-          <strong>R$ 899,90</strong>
-        </div>
+      <article class="product" data-search="air max 95 nike sneaker 1199 90 95">
+        <img src="https://i.ebayimg.com/images/g/EkQAAOSw0Epn7sp4/s-l1200.png" alt="Nike Air Max 95">
+        <div><small>NIKE / AIR MAX</small><h3>Air Max 95</h3><strong>R$ 1.199,90</strong></div>
       </article>
-
-      <article class="product" data-search="classic runner sneaker 749 90">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85" alt="Tênis vermelho premium">
-        <div>
-          <small>SNEAKER</small>
-          <h3>Classic Runner</h3>
-          <strong>R$ 749,90</strong>
-        </div>
+      <article class="product" data-search="air max plus tn nike tn triple black sneaker 1099 90 tn">
+        <img src="https://www.zookicks.com.au/cdn/shop/files/niketnTRIPLEBLACK.png?v=1736124562" alt="Nike Air Max Plus TN Triple Black">
+        <div><small>NIKE / TN</small><h3>Air Max Plus TN</h3><strong>R$ 1.099,90</strong></div>
       </article>
-
-      <article class="product" data-search="oversized essential streetwear camiseta 249 90">
-        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=85" alt="Peça streetwear">
-        <div>
-          <small>STREETWEAR</small>
-          <h3>Oversized Essential</h3>
-          <strong>R$ 249,90</strong>
-        </div>
+      <article class="product" data-search="air max plus 3 tn3 nike sneaker 1199 90 tn 3">
+        <img src="https://editorialist.com/thumbnail/600/2023/8/025/825/275/25825275~black_0.webp?width=600&quality=60" alt="Nike Air Max Plus 3 TN">
+        <div><small>NIKE / TN</small><h3>Air Max Plus 3</h3><strong>R$ 1.199,90</strong></div>
+      </article>
+      <article class="product" data-search="air max 97 nike sneaker 1149 90 97">
+        <img src="https://eg.mojaa.com/cdn/shop/files/921826-101-PHSRH000.jpg?v=1757329610" alt="Nike Air Max 97 branco">
+        <div><small>NIKE / AIR MAX</small><h3>Air Max 97</h3><strong>R$ 1.149,90</strong></div>
+      </article>
+      <article class="product" data-search="air max 90 nike sneaker 999 90 90">
+        <img src="https://www.studio-88.co.za/media/catalog/product/cache/ead79d362eadd98297170252f181cb50/n/k/nkk1723ur-nike-air-max-90-wht-red-dm0029-120-v1_jpg.jpg" alt="Nike Air Max 90 branco e vermelho">
+        <div><small>NIKE / AIR MAX</small><h3>Air Max 90</h3><strong>R$ 999,90</strong></div>
+      </article>
+      <article class="product" data-search="dunk low nike sneaker 899 90 dunk">
+        <img src="https://www.buzzsneakers.si/files/thumbs/files/images/slike-proizvoda/media/DD1/DD1503-101/images/thumbs_800/DD1503-101_800_800px.jpg" alt="Nike Dunk Low preto e branco">
+        <div><small>NIKE / DUNK</small><h3>Dunk Low</h3><strong>R$ 899,90</strong></div>
+      </article>
+      <article class="product" data-search="air force 1 nike af1 sneaker 899 90 air force">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1212,c_limit/19a82e7b-af02-4f48-8a8a-c084bc60472e/check-out-the-best-black-sneaker-styles-by-nike.jpg" alt="Nike Air Force 1">
+        <div><small>NIKE / AF1</small><h3>Air Force 1</h3><strong>R$ 899,90</strong></div>
+      </article>
+      <article class="product" data-search="air jordan 1 retro low jordan sneaker 1099 90 jordan">
+        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_599,c_limit/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ec110126-b2bd-43f7-a9f0-309eb6654e16/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Air Jordan 1 Retro Low">
+        <div><small>JORDAN</small><h3>Air Jordan 1 Low</h3><strong>R$ 1.099,90</strong></div>
+      </article>
+      <article class="product" data-search="adidas campus 00s sneaker 649 90 campus adidas">
+        <img src="https://merchsweden.se/cdn/shop/files/campusblack2.jpg?crop=center&height=1200&v=1710253652&width=1200" alt="adidas Campus 00s preto">
+        <div><small>ADIDAS</small><h3>Campus 00s</h3><strong>R$ 649,90</strong></div>
+      </article>
+      <article class="product" data-search="adidas samba og sneaker 699 90 samba adidas">
+        <img src="https://assets.adidas.com/images/w_500%2Cf_auto%2Cq_auto/4c70105150234ac4b948a8bf01187e0c_9366/Samba_OG_Shoes_Black_B75807_01_standard.jpg" alt="adidas Samba OG">
+        <div><small>ADIDAS</small><h3>Samba OG</h3><strong>R$ 699,90</strong></div>
       </article>
     </div>
     <p id="noResults" class="no-results" hidden>Nenhum produto encontrado.</p>
   </section>
-
+  <section id="galeria" class="section gallery-section">
+    <div class="section-head">
+      <span class="eyebrow">XAVIER STORE / VISUALS</span>
+      <h2>Galeria</h2>
+      <p>Toque em uma imagem para vê-la ampliada.</p>
+    </div>
+    <div class="gallery">
+      <a href="#xavier-img1" class="gallery-item" aria-label="Ampliar sneaker">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1212,c_limit/19a82e7b-af02-4f48-8a8a-c084bc60472e/check-out-the-best-black-sneaker-styles-by-nike.jpg" alt="Nike Air Force 1">
+      </a>
+      <a href="#xavier-img2" class="gallery-item" aria-label="Ampliar sneaker vermelho">
+        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_599,c_limit/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ec110126-b2bd-43f7-a9f0-309eb6654e16/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Air Jordan 1 Retro">
+      </a>
+      <a href="#xavier-img3" class="gallery-item" aria-label="Ampliar streetwear">
+        <img src="https://assets.adidas.com/images/w_500%2Cf_auto%2Cq_auto/4c70105150234ac4b948a8bf01187e0c_9366/Samba_OG_Shoes_Black_B75807_01_standard.jpg" alt="Peças de streetwear">
+      </a>
+      <a href="#xavier-img4" class="gallery-item" aria-label="Ampliar tênis casual">
+        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1200&q=90" alt="Tênis streetwear">
+      </a>
+    </div>
+  </section>
+  <div class="lightbox" id="xavier-img1" role="dialog" aria-label="Sneaker ampliado">
+    <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+    <div class="lightbox-content"><a href="#galeria" class="close-btn" aria-label="Fechar">&times;</a><img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1212,c_limit/19a82e7b-af02-4f48-8a8a-c084bc60472e/check-out-the-best-black-sneaker-styles-by-nike.jpg" alt="Nike Air Force 1 ampliado"></div>
+  </div>
+  <div class="lightbox" id="xavier-img2" role="dialog" aria-label="Air Jordan 1 Retro ampliado">
+    <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+    <div class="lightbox-content"><a href="#galeria" class="close-btn" aria-label="Fechar">&times;</a><img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_599,c_limit/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ec110126-b2bd-43f7-a9f0-309eb6654e16/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Air Jordan 1 Retro ampliado"></div>
+  </div>
+  <div class="lightbox" id="xavier-img3" role="dialog" aria-label="Streetwear ampliado">
+    <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+    <div class="lightbox-content"><a href="#galeria" class="close-btn" aria-label="Fechar">&times;</a><img src="https://assets.adidas.com/images/w_500%2Cf_auto%2Cq_auto/4c70105150234ac4b948a8bf01187e0c_9366/Samba_OG_Shoes_Black_B75807_01_standard.jpg" alt="Peças de streetwear ampliadas"></div>
+  </div>
+  <div class="lightbox" id="xavier-img4" role="dialog" aria-label="Tênis streetwear ampliado">
+    <a href="#galeria" class="lightbox-overlay" aria-label="Fechar imagem"></a>
+    <div class="lightbox-content"><a href="#galeria" class="close-btn" aria-label="Fechar">&times;</a><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1400&q=90" alt="Tênis streetwear ampliado"></div>
+  </div>
+  <section id="experiencia" class="section flip-section">
+    <div class="section-head">
+      <span class="eyebrow">EXPERIÊNCIA XAVIER</span>
+      <h2>Conheça nossos destaques</h2>
+      <p>Passe o mouse sobre os cards para descobrir mais.</p>
+    </div>
+    <div class="flip-grid">
+      <article class="flip-container" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1212,c_limit/19a82e7b-af02-4f48-8a8a-c084bc60472e/check-out-the-best-black-sneaker-styles-by-nike.jpg" alt="Nike Air Force 1">
+            <div class="flip-title">Sneakers Exclusivos</div>
+          </div>
+          <div class="flip-back">
+            <span class="eyebrow">CURADORIA</span>
+            <h3>Sneakers Exclusivos</h3>
+            <p>Modelos selecionados para quem procura autenticidade e presença.</p>
+            <a class="button" href="#colecao">Ver coleção</a>
+          </div>
+        </div>
+      </article>
+      <article class="flip-container" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_599,c_limit/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ec110126-b2bd-43f7-a9f0-309eb6654e16/AIR+JORDAN+1+RETRO+LOW+OG.png" alt="Streetwear">
+            <div class="flip-title">Streetwear</div>
+          </div>
+          <div class="flip-back">
+            <span class="eyebrow">ESSENTIALS</span>
+            <h3>Streetwear</h3>
+            <p>Peças urbanas para montar um visual simples, forte e autêntico.</p>
+            <a class="button" href="#colecao">Explorar peças</a>
+          </div>
+        </div>
+      </article>
+      <article class="flip-container" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://assets.adidas.com/images/w_500%2Cf_auto%2Cq_auto/4c70105150234ac4b948a8bf01187e0c_9366/Samba_OG_Shoes_Black_B75807_01_standard.jpg" alt="Air Jordan 1 Retro">
+            <div class="flip-title">Drops Especiais</div>
+          </div>
+          <div class="flip-back">
+            <span class="eyebrow">LIMITED</span>
+            <h3>Drops Especiais</h3>
+            <p>Novidades e lançamentos escolhidos para quem acompanha o hype.</p>
+            <a class="button" href="#contato">Consultar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
   <section id="sobre" class="about">
     <div>
       <span class="eyebrow">SOBRE A XAVIER</span>
@@ -87,7 +216,6 @@
     </div>
     <p>A Xavier Store nasceu para aproximar a cultura dos sneakers e do streetwear de uma experiência de compra mais limpa, direta e confiável. Selecionamos cada peça pensando em qualidade, autenticidade e estilo.</p>
   </section>
-
   <section id="contato" class="contact">
     <div>
       <span class="eyebrow">ATENDIMENTO</span>
@@ -97,7 +225,6 @@
     <a class="button" href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">Falar no WhatsApp ↗</a>
   </section>
 </main>
-
 <footer>
   <div class="footer-main">
     <div>
@@ -107,6 +234,8 @@
     <div class="footer-links">
       <a href="#inicio">Início</a>
       <a href="#colecao">Coleção</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#experiencia">Destaques</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato">Contato</a>
       <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
@@ -114,6 +243,56 @@
   </div>
   <div class="copyright">© 2026 Xavier Store. Todos os direitos reservados.</div>
 </footer>
-
+    <div id="banner-cookies" class="banner-cookies">
+        <p>Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.</p>
+        <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
+    </div>
+<script>
+(() => {
+ function initStore(){
+  const slider=document.querySelector('.slider-wrapper');
+  const slides=[...document.querySelectorAll('.slider-track .slide')];
+  const dots=[...document.querySelectorAll('.slider-dot')];
+  const prev=document.querySelector('.slider-prev');
+  const next=document.querySelector('.slider-next');
+  let current=Math.max(0,slides.findIndex(s=>s.classList.contains('is-active')));
+  let timer=null;
+  function show(i){
+    if(!slides.length)return;
+    current=(i+slides.length)%slides.length;
+    slides.forEach((s,n)=>{
+      s.classList.toggle('is-active',n===current);
+      s.setAttribute('aria-hidden',n===current?'false':'true');
+    });
+    dots.forEach((d,n)=>{
+      d.classList.toggle('is-active',n===current);
+      d.setAttribute('aria-pressed',n===current?'true':'false');
+    });
+  }
+  function stop(){ if(timer!==null){ clearInterval(timer); timer=null; } }
+  function start(){
+    stop();
+    if(slides.length>1) timer=setInterval(()=>show(current+1),4000);
+  }
+  if(slides.length){
+    show(current);
+    start();
+    prev?.addEventListener('click',()=>{show(current-1);start();});
+    next?.addEventListener('click',()=>{show(current+1);start();});
+    dots.forEach((d,i)=>d.addEventListener('click',()=>{show(i);start();}));
+    document.addEventListener('visibilitychange',()=>{ if(document.hidden)stop(); else start(); });
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(!id||id==='#')return;const target=document.querySelector(id);if(!target)return;e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});if(history.replaceState)history.replaceState(null,'',id)}));
+  const input=document.getElementById('searchInput'), products=[...document.querySelectorAll('[data-search]')], empty=document.getElementById('noResults');input?.addEventListener('input',()=>{const term=input.value.toLocaleLowerCase('pt-BR').trim();let count=0;products.forEach(p=>{const ok=((p.dataset.search||'')+' '+p.textContent).toLocaleLowerCase('pt-BR').includes(term);p.hidden=!ok;if(ok)count++});if(empty)empty.hidden=count!==0});
+  const banner=document.getElementById('banner-cookies'), accept=document.getElementById('btn-aceitar-cookies');let accepted=false;try{accepted=localStorage.getItem('xavierCookiesConsent2026')==='sim'}catch(e){}if(banner)banner.classList.toggle('oculto',accepted);accept?.addEventListener('click',()=>{try{localStorage.setItem('xavierCookiesConsent2026','sim')}catch(e){}banner?.classList.add('oculto')});
+  document.querySelectorAll('.flip-container').forEach(card=>{card.setAttribute('role','button');card.setAttribute('aria-pressed','false');card.addEventListener('click',e=>{if(e.target.closest('a'))return;const flipped=card.classList.toggle('is-flipped');card.setAttribute('aria-pressed',flipped?'true':'false')});card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();const flipped=card.classList.toggle('is-flipped');card.setAttribute('aria-pressed',flipped?'true':'false')}})});
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initStore,{once:true});else initStore();
+})();
+</script>
+<script src="js/chatbot.js"></script>
+<script>
+  initChatbot({ jsonUrl: 'minha-base-dados.json' });
+</script>
 </body>
 </html>
